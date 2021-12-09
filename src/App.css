@@ -11,8 +11,8 @@
 
 .header {
   text-align: center;
-  font-size: 32px;
-  margin: 2rem 0;
+  font-size: 3rem;
+  margin: 1rem 0;
   z-index: 100;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .footer-container {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   height: 75px;
