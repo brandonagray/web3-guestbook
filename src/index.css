@@ -1,7 +1,6 @@
 html {
-  background: #F1F1F1;
+  background: #F7FAFC;
   height: 100vh;
-  overflow:hidden;
 }
 
 body {
@@ -9,6 +8,7 @@ body {
   font-family: 'Segoe UI', 'Roboto', apple-system, BlinkMacSystemFont, 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: transparent !important;
 }
 
 code {

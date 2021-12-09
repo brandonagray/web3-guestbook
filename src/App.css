@@ -12,15 +12,26 @@
 .header {
   text-align: center;
   font-size: 32px;
-  font-weight: 600;
   margin: 2rem 0;
   z-index: 100;
 }
 
+.header span {
+  font-weight: bolder;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.wave-container {
+  border-top: 1px solid #CDCDCD;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
 .footer-container {
-  position: fixed;
-  left: 0;
+  position: absolute;
   bottom: 0;
+  left: 0;
+  height: 75px;
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -33,7 +44,11 @@ p {
 }
 
 .intro {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  text-align: center;
 }
 
 .center {
@@ -41,16 +56,13 @@ p {
   margin: 0 auto;
 }
 
-.button {
+.btn-flat {
   background: #85CEE8;
-  border: 2px solid #85CEE8;
+  border: none;
   color: #FFFFFF;
-  cursor: pointer;
   display: block;
   font-size: 1rem;
-  margin: 1rem auto;
   padding: 1rem;
-  width: 150px;
 }
 
 .logo {
@@ -65,103 +77,16 @@ p {
   vertical-align: middle;
 }
 
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
+.center {
+  margin: 0 auto;
 }
 
-.circles li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(133, 206, 232, 0.5);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    z-index: -1;
+#tsparticles {
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
 }
-
-.circles li:nth-child(1) {
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(2) {
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3) {
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4) {
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5) {
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6) {
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7) {
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8) {
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9) {
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10) {
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
 
 @keyframes animate {
     0%{
